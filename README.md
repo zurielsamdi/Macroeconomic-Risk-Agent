@@ -1,4 +1,4 @@
-# Morning Macro Risk Engine
+# Macroeconomic Risk Agent
 
 A Python framework that generates a daily macro market brief to help traders view the day's key risks, assess market conditions, and evaluate potential trade opportunities before the market opens. The system combines quantitative market analytics with an LLM-driven trade idea engine to produce a structured pre-market report.
 
