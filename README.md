@@ -1,23 +1,25 @@
-# Morning Agent – Macro State Engine
+## Macroeconomic Risk Agent
 
-This project builds a daily macro risk and trade framework across:
+A Python framework that generates a daily macro market brief to help traders understand the day's key risks, assess market conditions, and evaluate potential trade opportunities before the market opens.
 
-- US & Canada yield curves
-- G10 FX monitoring
-- Event severity scoring
-- Regime persistence statistics
-- DV01 stress simulation
-- FX market making simulation
-- Constraint gating for trade ideas
+Features
 
-The system is stateful: it stores historical slope metrics and computes rolling z-scores, volatility states, and empirical regime persistence probabilities.
+- Monitors US and Canadian yield curves and G10 FX markets
+- Scores macroeconomic events by expected market impact
+- Identifies market regimes using rolling z-scores, volatility metrics, and historical persistence
+- Simulates DV01 stress scenarios to quantify rates risk
+- Simulates FX market-making P&L under different market conditions
+- Generates constraint-based trade and hedge ideas that satisfy predefined risk parameters
+- Produces an automated Excel morning report with VBA formatting
 
-Outputs:
-- Excel Morning Brief (auto-generated)
-- Predictive Outlook block
-- Rates DV01 risk summary
-- FX MM simulation
-- Constraint-gated trade ideas
+Output
 
-Architecture:
-Python → Excel report → VBA formatting layer
+The system generates a daily morning brief containing:
+- Macro market summary
+- Predictive outlook
+- Rates and DV01 risk analysis
+- FX market-making simulation
+- Constraint-filtered trade ideas
+
+Architecture: Python → Excel → VBA
+
